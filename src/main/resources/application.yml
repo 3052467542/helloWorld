@@ -1,0 +1,21 @@
+server:
+  servlet:
+    context-path: /ssm
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lenovo?useUnicode=true&amp;characterEncoding=UTF-8
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.yidu.demo.entity
+
+
+
